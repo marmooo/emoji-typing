@@ -1,0 +1,766 @@
+👋,people,hand
+🦵,people,leg
+🦶,people,foot
+👂,people,ear
+🦻,people,ear
+👃,people,nose
+🧠,people,brain
+🫀,people,heart
+🦷,people,tooth
+🦴,people,bone
+👀,people,eyes
+👁️,people,eye
+👅,people,tongue
+👄,people,mouth
+👶,people,baby
+🧒,people,child
+👦,people,boy
+👧,people,girl
+👨,people,man
+👨‍🦰,people,man
+👨‍🦱,people,man
+👨‍🦳,people,man
+👨‍🦲,people,man
+👩,people,woman
+👩‍🦰,people,woman
+👩‍🦱,people,woman
+👩‍🦳,people,woman
+👩‍🦲,people,woman
+👱‍♀️,people,woman
+👱‍♂️,people,man
+👴,people,old man
+👵,people,old woman
+🧑‍🎓,people,student
+👨‍🎓,people,student
+👩‍🎓,people,student
+🧑‍🏫,people,teacher
+👨‍🏫,people,teacher
+👩‍🏫,people,teacher
+🧑‍⚖️,people,judge
+👨‍⚖️,people,judge
+👩‍⚖️,people,judge
+🧑‍🌾,people,farmer
+👨‍🌾,people,farmer
+👩‍🌾,people,farmer
+🧑‍🍳,people,cook
+👨‍🍳,people,cook
+👩‍🍳,people,cook
+🧑‍🔧,people,mechanic
+👨‍🔧,people,mechanic
+👩‍🔧,people,mechanic
+🧑‍🔬,people,scientist
+👨‍🔬,people,scientist
+👩‍🔬,people,scientist
+🧑‍💻,people,technologist
+👨‍💻,people,technologist
+👩‍💻,people,technologist
+🧑‍🎤,people,singer
+👨‍🎤,people,singer
+👩‍🎤,people,singer
+🧑‍🎨,people,artist
+👨‍🎨,people,artist
+👩‍🎨,people,artist
+🧑‍✈️,people,pilot
+👨‍✈️,people,pilot
+👩‍✈️,people,pilot
+🧑‍🚀,people,astronaut
+👨‍🚀,people,astronaut
+👩‍🚀,people,astronaut
+🧑‍🚒,people,firefighter
+👨‍🚒,people,firefighter
+👩‍🚒,people,firefighter
+👮,people,police officer
+👮‍♂️,people,police officer
+👮‍♀️,people,police officer
+🕵️,people,detective
+🕵️‍♂️,people,detective
+🕵️‍♀️,people,detective
+💂,people,guard
+💂‍♂️,people,guard
+💂‍♀️,people,guard
+🥷,people,ninja
+🤴,people,prince
+👸,people,princess
+🚶,people,walking
+🚶‍♂️,people,walking
+🚶‍♀️,people,walking
+🧍,people,standing
+🧍‍♂️,people,standing
+🧍‍♀️,people,standing
+🏃,people,running
+🏃‍♂️,people,running
+🏃‍♀️,people,running
+💃,people,dancing
+🕺,people,dancing
+👪,people,family
+👨‍👩‍👦,people,family
+👨‍👩‍👧,people,family
+👨‍👩‍👧‍👦,people,family
+👨‍👩‍👦‍👦,people,family
+👨‍👩‍👧‍👧,people,family
+👨‍👨‍👦,people,family
+👨‍👨‍👧,people,family
+👨‍👨‍👧‍👦,people,family
+👨‍👨‍👦‍👦,people,family
+👨‍👨‍👧‍👧,people,family
+👩‍👩‍👦,people,family
+👩‍👩‍👧,people,family
+👩‍👩‍👧‍👦,people,family
+👩‍👩‍👦‍👦,people,family
+👩‍👩‍👧‍👧,people,family
+🌂,clothes,umbrella
+☂️,clothes,umbrella
+👓,clothes,glasses
+🕶️,clothes,sunglasses
+🥽,clothes,goggles
+🥼,clothes,coat
+🦺,clothes,vest
+👔,clothes,necktie
+👕,clothes,t-shirt
+👖,clothes,jeans
+🧣,clothes,scarf
+🧤,clothes,gloves
+🧥,clothes,coat
+🧦,clothes,socks
+👗,clothes,dress
+👘,clothes,kimono
+🩱,clothes,swimsuit
+🩲,clothes,briefs
+🩳,clothes,shorts
+👙,clothes,bikini
+👚,clothes,clothes
+👛,clothes,purse
+👜,clothes,handbag
+👝,clothes,bag
+🎒,clothes,backpack
+🩴,clothes,sandal
+👞,clothes,shoe
+👟,clothes,shoe
+🥾,clothes,boot
+🥿,clothes,shoe
+👠,clothes,shoe
+👡,clothes,sandal
+🩰,clothes,shoes
+👢,clothes,boot
+👑,clothes,crown
+👒,clothes,hat
+🎩,clothes,hat
+🎓,clothes,cap
+🧢,clothes,cap
+🪖,clothes,helmet
+⛑️,clothes,helmet
+💄,clothes,lipstick
+💍,clothes,ring
+💼,clothes,briefcase
+🐵,animals,monkey
+🐒,animals,monkey
+🦍,animals,gorilla
+🦧,animals,orangutan
+🐶,animals,dog
+🐕,animals,dog
+🦮,animals,dog
+🐕‍🦺,animals,dog
+🐩,animals,poodle
+🐺,animals,wolf
+🦊,animals,fox
+🦝,animals,raccoon
+🐱,animals,cat
+🐈,animals,cat
+🐈‍⬛,animals,cat
+🦁,animals,lion
+🐯,animals,tiger
+🐅,animals,tiger
+🐆,animals,leopard
+🐴,animals,horse
+🐎,animals,horse
+🦄,animals,unicorn
+🦓,animals,zebra
+🦌,animals,deer
+🐮,animals,cow
+🐄,animals,cow
+🐷,animals,pig
+🐖,animals,pig
+🦒,animals,giraffe
+🐘,animals,elephant
+🦣,animals,mammoth
+🐭,animals,mouse
+🐁,animals,mouse
+🐀,animals,rat
+🐹,animals,hamster
+🐰,animals,rabbit
+🐇,animals,rabbit
+🦇,animals,bat
+🐻,animals,bear
+🐻‍❄️,animals,bear
+🐨,animals,koala
+🐼,animals,panda
+🦥,animals,sloth
+🦨,animals,skunk
+🦘,animals,kangaroo
+🐔,animals,chicken
+🐣,animals,chick
+🐤,animals,chick
+🐥,animals,chick
+🐦,animals,bird
+🐧,animals,penguin
+🦆,animals,duck
+🦢,animals,swan
+🦉,animals,owl
+🪶,animals,feather
+🦩,animals,flamingo
+🦜,animals,parrot
+🐸,animals,frog
+🐊,animals,crocodile
+🐢,animals,turtle
+🦎,animals,lizard
+🐍,animals,snake
+🐲,animals,dragon
+🐉,animals,dragon
+🦕,animals,sauropod
+🦖,animals,t-rex
+🐳,animals,whale
+🐋,animals,whale
+🐬,animals,dolphin
+🦭,animals,seal
+🐟,animals,fish
+🐠,animals,fish
+🦈,animals,shark
+🐙,animals,octopus
+🐚,animals,shell
+🐌,animals,snail
+🦋,animals,butterfly
+🐛,animals,bug
+🐜,animals,ant
+🐝,animals,honeybee
+🪲,animals,beetle
+🐞,animals,lady beetle
+🦗,animals,cricket
+🪳,animals,cockroach
+🕷️,animals,spider
+🕸️,animals,spider web
+🦂,animals,scorpion
+🦟,animals,mosquito
+🪰,animals,fly
+🪱,animals,worm
+💐,nature,bouquet
+🌸,nature,blossom
+💮,nature,blossom
+🏵️,nature,blossom
+🌹,nature,blossom
+🌺,nature,blossom
+🌻,nature,sunflower
+🌼,nature,blossom
+🌷,nature,tulip
+🪴,nature,plant
+🌲,nature,tree
+🌳,nature,tree
+🌴,nature,tree
+🌿,nature,leaf
+☘️,nature,leaf
+🍀,nature,leaf
+🍁,nature,leaf
+🍂,nature,leaf
+🍃,nature,leaf
+🍄,nature,mushroom
+🦀,nature,crab
+🦞,nature,lobster
+🦐,nature,shrimp
+🦑,nature,squid
+🪨,nature,rock
+🌙,nature,moon
+🌛,nature,moon
+🌜,nature,moon
+☀️,nature,sun
+🌞,nature,sun
+⭐,nature,star
+🌟,nature,star
+🌠,nature,star
+☁️,nature,cloud
+🌧️,nature,rain
+🌨️,nature,snow
+🌩️,nature,lightning
+🌪️,nature,tornado
+🌫️,nature,fog
+🌈,nature,rainbow
+☂️,nature,umbrella
+⚡,nature,lightning
+❄️,nature,snowflake
+☃️,nature,snowman
+⛄,nature,snowman
+☄️,nature,comet
+🔥,nature,fire
+🌊,nature,wave
+🍇,food,grapes
+🍈,food,melon
+🍉,food,watermelon
+🍋,food,lemon
+🍌,food,banana
+🍍,food,pineapple
+🥭,food,mango
+🍎,food,apple
+🍏,food,apple
+🍐,food,pear
+🍑,food,peach
+🍒,food,cherries
+🍓,food,strawberry
+🫐,food,blueberries
+🥝,food,kiwi fruit
+🍅,food,tomato
+🫒,food,olive
+🥥,food,coconut
+🥑,food,avocado
+🍆,food,eggplant
+🥔,food,potato
+🥕,food,carrot
+🌽,food,corn
+🌶️,food,hot pepper
+🫑,food,bell pepper
+🥒,food,cucumber
+🥬,food,leafy green
+🥦,food,broccoli
+🧄,food,garlic
+🧅,food,onion
+🍄,food,mushroom
+🥜,food,peanuts
+🌰,food,chestnut
+🍞,food,bread
+🥐,food,bread
+🥖,food,bread
+🫓,food,bread
+🥨,food,bread
+🥯,food,bagel
+🥞,food,pancakes
+🧇,food,waffle
+🧀,food,cheese
+🍖,food,meat
+🍗,food,meat
+🥩,food,meat
+🥓,food,bacon
+🍔,food,hamburger
+🍟,food,french fries
+🍕,food,pizza
+🌭,food,hot dog
+🥪,food,sandwich
+🌮,food,taco
+🥚,food,egg
+🥗,food,salad
+🍿,food,popcorn
+🧈,food,butter
+🧂,food,salt
+🍱,food,bento box
+🍘,food,rice cracker
+🍙,food,rice ball
+🍚,food,cooked rice
+🍛,food,curry rice
+🍜,food,steaming bowl
+🍝,food,spaghetti
+🍢,food,oden
+🍣,food,sushi
+🍤,food,fried shrimp
+🥮,food,moon cake
+🍡,food,dango
+🥟,food,dumpling
+🥡,food,takeout box
+🦪,food,oyster
+🍦,food,soft ice cream
+🍧,food,shaved ice
+🍨,food,ice cream
+🍩,food,doughnut
+🍪,food,cookie
+🎂,food,cake
+🍰,food,shortcake
+🧁,food,cupcake
+🥧,food,pie
+🍫,food,chocolate
+🍬,food,candy
+🍭,food,lollipop
+🍮,food,custard
+🍯,food,honey pot
+🥛,food,milk
+🫖,food,teapot
+🍵,food,teacup
+🍶,food,sake
+🍷,food,glass
+🍸,food,glass
+🍹,food,drink
+🍺,food,beer
+🍻,food,beer
+🧊,food,ice
+🥢,food,chopsticks
+🥄,food,spoon
+🧗,sports,climbing
+🧗‍♂️,sports,climbing
+🧗‍♀️,sports,climbing
+🤺,sports,fencing
+🏇,sports,horse racing
+⛷️,sports,skiing
+🏂,sports,snowboardering
+🏌️,sports,golfing
+🏌️‍♂️,sports,golfing
+🏌️‍♀️,sports,golfing
+🏄,sports,surfing
+🏄‍♂️,sports,surfing
+🏄‍♀️,sports,surfing
+🚣,sports,boating
+🚣‍♂️,sports,boating
+🚣‍♀️,sports,boating
+🏊,sports,swimming
+🏊‍♂️,sports,swimming
+🏊‍♀️,sports,swimming
+⛹️,sports,bouncing ball
+⛹️‍♂️,sports,bouncing ball
+⛹️‍♀️,sports,bouncing ball
+🏋️,sports,lifting weights
+🏋️‍♂️,sports,lifting weights
+🏋️‍♀️,sports,lifting weights
+🚴,sports,biking
+🚴‍♂️,sports,biking
+🚴‍♀️,sports,biking
+🚵,sports,mountain biking
+🚵‍♂️,sports,mountain biking
+🚵‍♀️,sports,mountain biking
+🤸,sports,cartwheeling
+🤸‍♂️,sports,cartwheeling
+🤸‍♀️,sports,cartwheeling
+🤼,sports,wrestling
+🤼‍♂️,sports,wrestling
+🤼‍♀️,sports,wrestling
+🤾,sports,playing handball
+🤾‍♂️,sports,playing handball
+🤾‍♀️,sports,playing handball
+🤹,sports,juggling
+🤹‍♂️,sports,juggling
+🤹‍♀️,sports,juggling
+🧘,sports,in lotus position
+🧘‍♂️,sports,in lotus position
+🧘‍♀️,sports,in lotus position
+🛹,sports,skateboard
+🛼,sports,roller skate
+🛶,sports,canoe
+🎖️,sports,medal
+🏆,sports,trophy
+🏅,sports,medal
+🥇,sports,medal
+🥈,sports,medal
+🥉,sports,medal
+⚽,sports,soccer ball
+⚾,sports,baseball
+🥎,sports,softball
+🏀,sports,basketball
+🏐,sports,volleyball
+🏈,sports,american football
+🏉,sports,rugby football
+🎾,sports,tennis
+🥏,sports,flying disc
+🎳,sports,bowling
+🏏,sports,cricket game
+🏑,sports,field hockey
+🏒,sports,ice hockey
+🥍,sports,lacrosse
+🏓,sports,ping pong
+🏸,sports,badminton
+🥊,sports,boxing
+🥋,sports,martial arts
+🥅,sports,goal net
+⛳,sports,flag in hole
+⛸️,sports,ice skate
+🎣,sports,fishing
+🎽,sports,running shirt
+🎿,sports,skis
+🛷,sports,sled
+🥌,sports,curling stone
+🎯,sports,bullseye
+🎮,sports,video game
+🎰,sports,slot machine
+🎨,sports,palette
+🎼,sports,musical score
+🎤,sports,microphone
+🎧,sports,headphone
+🎷,sports,saxophone
+🪗,sports,accordion
+🎸,sports,guitar
+🎹,sports,musical keyboard
+🎺,sports,trumpet
+🎻,sports,violin
+🥁,sports,drum
+🪘,sports,long drum
+🎬,sports,clapper board
+🏹,sports,bow and arrow
+🗾,travel,Japan
+🏔️,travel,mountain
+⛰️,travel,mountain
+🌋,travel,volcano
+🗻,travel,mount fuji
+🏕️,travel,camping
+🏖️,travel,beach
+🏜️,travel,desert
+🏝️,travel,desert island
+🏞️,travel,national park
+🏟️,travel,stadium
+🏛️,travel,classical building
+🏗️,travel,building construction
+🏘️,travel,houses
+🏚️,travel,house
+🏠,travel,house
+🏡,travel,house
+🏢,travel,office building
+🏣,travel,post office
+🏥,travel,hospital
+🏦,travel,bank
+🏨,travel,hotel
+🏪,travel,convenience store
+🏫,travel,school
+🏬,travel,department store
+🏭,travel,factory
+🏯,travel,castle
+🏰,travel,castle
+💒,travel,wedding
+🗼,travel,tokyo tower
+⛪,travel,church
+⛩️,travel,shrine
+⛲,travel,fountain
+⛺,travel,tent
+🌁,travel,foggy
+🌄,travel,sunrise
+🌅,travel,sunrise
+🌇,travel,sunset
+🎡,travel,ferris wheel
+🎢,travel,roller coaster
+🚆,travel,train
+🚇,travel,metro
+🚉,travel,station
+🚝,travel,monorail
+🚌,travel,bus
+🚍,travel,bus
+🚑,travel,ambulance
+🚒,travel,fire engine
+🚓,travel,police car
+🚔,travel,police car
+🚕,travel,taxi
+🚖,travel,taxi
+🚗,travel,automobile
+🚘,travel,automobile
+🛻,travel,pickup truck
+🚚,travel,delivery truck
+🚜,travel,tractor
+🏎️,travel,racing car
+🏍️,travel,motorcycle
+🛵,travel,motor scooter
+🚲,travel,bicycle
+🛴,travel,kick scooter
+🚏,travel,bus stop
+🛣️,travel,motorway
+🛤️,travel,railway track
+⛽,travel,fuel pump
+🚥,travel,traffic light
+🚦,travel,traffic light
+🚧,travel,construction
+⚓,travel,anchor
+⛵,travel,sailboat
+🚤,travel,speedboat
+🛳️,travel,ship
+⛴️,travel,ferry
+🛥️,travel,motor boat
+🚢,travel,ship
+✈️,travel,airplane
+🛩️,travel,airplane
+🛫,travel,airplane
+🛬,travel,airplane
+🪂,travel,parachute
+💺,travel,seat
+🚁,travel,helicopter
+🛰️,travel,satellite
+🚀,travel,rocket
+🪐,travel,planet
+🌠,travel,shooting star
+🌌,travel,milky way
+🎆,travel,fireworks
+🎇,travel,sparkler
+🗿,travel,moai
+💌,objects,love letter,ラブレター,ラブレター
+🕳️,objects,hole,穴,あな
+💣,objects,bomb,爆弾,ばくだん
+🛀,objects,take bath,風呂,ふろ
+🛌,objects,go to bed,ベッド,ベッド
+🔪,objects,kitchen knife,キッチンナイフ,キッチンナイフ
+🗺️,objects,world map,世界地図,せかいちず
+🧭,objects,compass,コンパス,コンパス
+🧱,objects,brick,レンガ,レンガ
+💈,objects,barber,床屋,とこや
+🦽,objects,manual wheel chair,車椅子,くるまいす
+🦼,objects,motorized wheel chair,電動車椅子,でんどうくるまいす
+🛢️,objects,drum,ドラム缶,ドラムかん
+🛎️,objects,bellhop bell,呼び鈴,よびりん
+🧳,objects,luggage,荷物,にもつ
+⌛,objects,hourglass,砂時計
+⏳,objects,hourglass,砂時計
+⌚,objects,watch,時計,とけい
+⏰,objects,alarm clock,アラーム,アラーム
+⏱️,objects,stopwatch,ストップウォッチ,ストップウォッチ
+⏲️,objects,timer clock,タイマー,タイマー
+🕰️,objects,mantelpiece clock,置き時計,おきどけい
+🌡️,objects,thermometer,温度計,おんどけい
+⛱️,objects,beach parasol,パラソル,パラソル
+🧨,objects,firecracker,爆竹,ばくちく
+🎈,objects,balloon,風船,ふうせん
+🎉,objects,party popper,クラッカー,クラッカー
+🎊,objects,confetti ball,くす玉,くすだま
+🎎,objects,Japanese dolls,雛人形,ひなにんぎょう
+🎏,objects,carp streamers,鯉のぼり,こいのぼり
+🎐,objects,wind chime
+🎀,objects,ribbon
+🎁,objects,wrapped gift
+🤿,objects,diving mask
+🪀,objects,yo-yo
+🪁,objects,kite
+🪄,objects,magic wand
+🕹️,objects,joystick
+🧸,objects,teddy bear
+🪆,objects,nesting dolls
+🖼️,objects,framed picture
+🛍️,objects,shopping bags
+💎,objects,gem stone
+📱,necessaries,mobile phone
+🔋,necessaries,battery
+🔌,necessaries,electric plug
+💻,necessaries,laptop
+🖥️,necessaries,desktop computer
+🖨️,necessaries,printer
+⌨️,necessaries,keyboard
+🖱️,necessaries,computer mouse
+🖲️,necessaries,trackball
+🧮,necessaries,abacus
+🎥,necessaries,movie camera
+📺,necessaries,television
+📷,necessaries,camera
+📸,necessaries,camera
+📹,necessaries,video camera
+🔍,necessaries,magnifying glass
+🔎,necessaries,magnifying glass
+🕯️,necessaries,candle
+💡,necessaries,light bulb
+🔦,necessaries,flashlight
+📔,necessaries,notebook
+📕,necessaries,book
+📖,necessaries,book
+📗,necessaries,book
+📘,necessaries,book
+📙,necessaries,book
+📚,necessaries,books
+📓,necessaries,notebook
+🏷️,necessaries,label
+💰,necessaries,money bag
+🪙,necessaries,coin
+💴,necessaries,banknote
+💵,necessaries,banknote
+💶,necessaries,banknote
+💷,necessaries,banknote
+💳,necessaries,credit card
+🧾,necessaries,receipt
+✉️,necessaries,envelope
+📮,necessaries,postbox
+✏️,necessaries,pencil
+🖊️,necessaries,pen
+🖌️,necessaries,paintbrush
+🖍️,necessaries,crayon
+📝,necessaries,memo
+📅,necessaries,calendar
+📆,necessaries,calendar
+🗓️,necessaries,calendar
+📋,necessaries,clipboard
+📌,necessaries,pushpin
+📍,necessaries,pushpin
+📎,necessaries,paperclip
+🖇️,necessaries,paperclips
+📏,necessaries,ruler
+📐,necessaries,ruler
+✂️,necessaries,scissors
+🗃️,necessaries,card file box
+🗄️,necessaries,file cabinet
+🗑️,necessaries,wastebasket
+🔒,necessaries,locked
+🔓,necessaries,unlocked
+🔑,necessaries,key
+🗝️,necessaries,key
+🔨,objects,hammer
+🪓,objects,axe
+⛏️,objects,pick
+🗡️,objects,dagger
+⚔️,objects,crossed swords
+🔫,objects,water pistol
+🪃,objects,boomerang
+🛡️,objects,shield
+🔗,objects,link
+⛓️,objects,chains
+🪝,objects,hook
+🧰,objects,toolbox
+🧲,objects,magnet
+🪜,objects,ladder
+💉,objects,syringe
+💊,objects,pill
+🩹,objects,adhesive bandage
+🚪,objects,door
+🪞,objects,mirror
+🪟,objects,window
+🛏️,objects,bed
+🛋️,objects,couch and lamp
+🪑,objects,chair
+🚽,objects,toilet
+🪠,objects,plunger
+🚿,objects,shower
+🛁,objects,bathtub
+🪒,objects,razor
+🧴,objects,lotion bottle
+🧷,objects,safety pin
+🧹,objects,broom
+🧺,objects,basket
+🧻,objects,roll of paper
+🪣,objects,bucket
+🧼,objects,soap
+🪥,objects,toothbrush
+🧽,objects,sponge
+🧯,objects,fire extinguisher
+🛒,objects,shopping cart
+🚬,objects,cigarette
+🪧,objects,placard
+♨️,symbols,hot springs
+💈,symbols,barber pole
+🕛,symbols,twelve o’clock
+🕧,symbols,twelve-thirty
+🕐,symbols,one o’clock
+🕜,symbols,one-thirty
+🕑,symbols,two o’clock
+🕝,symbols,two-thirty
+🕒,symbols,three o’clock
+🕞,symbols,three-thirty
+🕓,symbols,four o’clock
+🕟,symbols,four-thirty
+🕔,symbols,five o’clock
+🕠,symbols,five-thirty
+🕕,symbols,six o’clock
+🕡,symbols,six-thirty
+🕖,symbols,seven o’clock
+🕢,symbols,seven-thirty
+🕗,symbols,eight o’clock
+🕣,symbols,eight-thirty
+🕘,symbols,nine o’clock
+🕤,symbols,nine-thirty
+🕙,symbols,ten o’clock
+🕥,symbols,ten-thirty
+🕚,symbols,eleven o’clock
+🕦,symbols,eleven-thirty
+🌀,symbols,cyclone
+♠️,symbols,spade
+♥️,symbols,heart
+♦️,symbols,diamond
+📢,symbols,loudspeaker
+📣,symbols,megaphone
+🔔,symbols,bell
+⬆️,symbols,up
+↗️,symbols,up-right
+➡️,symbols,right
+↘️,symbols,down-right
+⬇️,symbols,down
+↙️,symbols,down-left
+⬅️,symbols,left
+↖️,symbols,up-left
