@@ -1,7 +1,8 @@
-var CACHE_NAME = "2022-06-04 08:00";
+var CACHE_NAME = "2022-06-09 09:50";
 var urlsToCache = [
   "/emoji-typing/",
   "/emoji-typing/ja/",
+  "/emoji-typing/ja/index.yomi",
   "/emoji-typing/index.js",
   "/emoji-typing/data/ja.csv",
   "/emoji-typing/mp3/bgm.mp3",
@@ -10,6 +11,7 @@ var urlsToCache = [
   "/emoji-typing/mp3/end.mp3",
   "/emoji-typing/mp3/keyboard.mp3",
   "/emoji-typing/favicon/favicon.svg",
+  "https://marmooo.github.io/yomico/yomico.min.js",
   "https://marmooo.github.io/fonts/textar-light.woff2",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css",
   "https://cdn.jsdelivr.net/npm/simple-keyboard@3.4.52/build/index.min.js",
