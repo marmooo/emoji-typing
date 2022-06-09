@@ -133,6 +133,13 @@ function loadConfig() {
     document.getElementById("bgmOn").classList.add("d-none");
     document.getElementById("bgmOff").classList.remove("d-none");
   }
+  if (originalLang == "ja") {
+    if (localStorage.getItem("furigana") == 1) {
+      const obj = document.getElementById("addFurigana");
+      addFurigana(obj);
+      obj.setAttribute("data-done", true);
+    }
+  }
 }
 
 function toggleBGM() {
@@ -182,6 +189,21 @@ function toggleDarkMode() {
   } else {
     localStorage.setItem("darkMode", 1);
     document.documentElement.dataset.theme = "dark";
+  }
+}
+
+function addFurigana() {
+  if (originalLang != "ja") return;
+  const obj = document.getElementById("addFurigana");
+  if (obj.getAttribute("data-done")) {
+    localStorage.setItem("furigana", 0);
+    location.reload();
+  } else {
+    import("https://marmooo.github.io/yomico/yomico.min.js").then((module) => {
+      module.yomico("/emoji-typing/ja/index.yomi");
+    });
+    localStorage.setItem("furigana", 1);
+    obj.setAttribute("data-done", true);
   }
 }
 
