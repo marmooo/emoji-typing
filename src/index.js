@@ -754,7 +754,7 @@ function changeMode() {
 function selectRandomEmoji() {
   const category = categories[getRandomInt(0, categories.length)];
   const p = problems[category];
-  console.log(problems);
+  console.log([problems, categories]);
   const problem = p[getRandomInt(0, p.length)];
   const emojis = problem[0];
   const emoji = emojis[getRandomInt(0, emojis.length)];
