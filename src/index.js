@@ -14,7 +14,7 @@ const gameTime = 60;
 const tmpCanvas = document.createElement("canvas");
 const mode = document.getElementById("mode");
 const categories = [...document.getElementById("courseOption").options].map(
-  (x) => x.textContent.toLowerCase(),
+  (x) => x.value.toLowerCase(),
 );
 const problems = {};
 const originalLang = document.documentElement.lang;
@@ -754,7 +754,6 @@ function changeMode() {
 function selectRandomEmoji() {
   const category = categories[getRandomInt(0, categories.length)];
   const p = problems[category];
-  console.log([problems, categories]);
   const problem = p[getRandomInt(0, p.length)];
   const emojis = problem[0];
   const emoji = emojis[getRandomInt(0, emojis.length)];
