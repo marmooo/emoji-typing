@@ -819,6 +819,8 @@ setTranslation();
 
 startButton.onclick = replay;
 document.getElementById("toggleDarkMode").onclick = toggleDarkMode;
+const furiganaButton = document.getElementById("addFurigana");
+if (furiganaButton) furiganaButton.onclick = addFurigana;
 document.getElementById("toggleBGM").onclick = toggleBGM;
 document.getElementById("virtualKeyboard").onclick = toggleKeyboard;
 window.addEventListener("resize", () => {
