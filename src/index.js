@@ -19,6 +19,7 @@ const categories = [...document.getElementById("courseOption").options].map(
 const problems = {};
 const originalLang = document.documentElement.lang;
 const ttsLang = getTTSLang();
+let playing;
 let typeTimer;
 // https://dova-s.jp/bgm/play16563.html
 const bgm = new Audio("/emoji-typing/mp3/bgm.mp3");
@@ -502,6 +503,28 @@ function typeEvent(event) {
 }
 
 function typeEventKey(key) {
+  switch (key) {
+    case "NonConvert": {
+      [...romaNode.children].forEach((span) => {
+        span.style.visibility = "visible";
+      });
+      downTime(5);
+      return;
+    }
+    case "Convert": {
+      const text = originalTextNode.textContent;
+      loopVoice(text.toLowerCase(), 1);
+      return;
+    }
+    case "Escape":
+      replay();
+      return;
+    case " ":
+      if (!playing) {
+        replay();
+        return;
+      }
+  }
   const currNode = romaNode.childNodes[typeIndex];
   if (/^[^0-9]$/.test(key)) {
     if (key == currNode.textContent) {
@@ -524,24 +547,6 @@ function typeEventKey(key) {
       nextProblem();
     } else {
       showGuide(romaNode.childNodes[typeIndex]);
-    }
-  } else {
-    switch (key) {
-      case "NonConvert": {
-        [...romaNode.children].forEach((span) => {
-          span.style.visibility = "visible";
-        });
-        downTime(5);
-        break;
-      }
-      case "Convert": {
-        const text = originalTextNode.textContent;
-        loopVoice(text.toLowerCase(), 1);
-        break;
-      }
-      case "Escape":
-        replay();
-        break;
     }
   }
 }
@@ -644,8 +649,13 @@ function typable() {
 }
 
 function countdown() {
+  playing = true;
   changeUIEmoji();
-  typeIndex = normalCount = errorCount = solveCount = 0;
+  typeIndex =
+    normalCount =
+    errorCount =
+    solveCount =
+      0;
   document.getElementById("guideSwitch").disabled = true;
   document.getElementById("virtualKeyboard").disabled = true;
   gamePanel.classList.add("d-none");
@@ -674,7 +684,6 @@ function countdown() {
       if (localStorage.getItem("bgm") == 1) {
         bgm.play();
       }
-      document.addEventListener("keydown", typeEvent);
       startButton.disabled = false;
     }
   }, 1000);
@@ -683,20 +692,15 @@ function countdown() {
 function replay() {
   clearInterval(typeTimer);
   removeGuide(romaNode.childNodes[typeIndex]);
-  document.removeEventListener("keydown", typeEvent);
   document.getElementById("time").textContent = gameTime;
   countdown();
-  typeIndex = normalCount = errorCount = solveCount = 0;
+  typeIndex =
+    normalCount =
+    errorCount =
+    solveCount =
+      0;
   countPanel.classList.remove("d-none");
   scorePanel.classList.add("d-none");
-}
-
-function startKeyEvent(event) {
-  if (event.key == " ") {
-    event.preventDefault(); // ScrollLock
-    document.removeEventListener("keydown", startKeyEvent);
-    replay();
-  }
 }
 
 function startTypeTimer() {
@@ -726,12 +730,12 @@ function downTime(n) {
 }
 
 function scoring() {
+  playing = false;
   infoPanel.classList.remove("d-none");
   playPanel.classList.add("d-none");
   aaOuter.classList.add("d-none");
   countPanel.classList.add("d-none");
   scorePanel.classList.remove("d-none");
-  document.removeEventListener("keydown", typeEvent);
   let time = parseInt(document.getElementById("time").textContent);
   if (time < gameTime) {
     time = gameTime - time;
@@ -740,7 +744,6 @@ function scoring() {
   document.getElementById("totalType").textContent = normalCount + errorCount;
   document.getElementById("typeSpeed").textContent = typeSpeed;
   document.getElementById("errorType").textContent = errorCount;
-  document.addEventListener("keydown", startKeyEvent);
 }
 
 function changeMode() {
@@ -828,7 +831,7 @@ window.addEventListener("resize", () => {
 document.getElementById("mode").onclick = changeMode;
 document.getElementById("guideSwitch").onchange = toggleGuide;
 document.getElementById("lang").onchange = changeLang;
-document.addEventListener("keydown", startKeyEvent);
+document.addEventListener("keydown", typeEvent);
 document.addEventListener("click", unlockAudio, {
   once: true,
   useCapture: true,
