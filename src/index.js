@@ -75,10 +75,10 @@ const keyboardDisplay = {
   "{space}": " ",
   "{altLeft}": "Alt",
   "{altRight}": "Alt",
-  "🌏": (originalLang == "ja") ? "🇯🇵" : "🇺🇸",
+  "🌏": (navigator.language == "ja") ? "🇯🇵" : "🇺🇸",
 };
 const simpleKeyboard = new SimpleKeyboard.default({
-  layout: (originalLang == "ja") ? layout109 : layout104,
+  layout: (navigator.language == "ja") ? layout109 : layout104,
   display: keyboardDisplay,
   onInit: () => {
     document.getElementById("keyboard").classList.add("d-none");
