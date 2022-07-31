@@ -59,7 +59,7 @@
       @media (max-width: 768px) {
         .emoji { font-size:3rem; }
       }
-      #gamePanel {  height:calc(100vh - 60px); }
+      #gamePanel {  height:calc(100vh - 320px); }
       #typePanel { font-variant-ligatures:none; word-wrap: break-word; }
       #keyboard { touch-action:manipulation; }
       .hg-theme-default .hg-button { height:40px; font-size:2rem; }
@@ -118,45 +118,43 @@
         <pre><code>sudo apt install speech-dispatcher
 sudo apt install festival speech-dispatcher-festival</code></pre>
       </div>
-      <div id="gamePanel" class="d-flex flex-column">
-        <div id="infoPanel">
-          <div class="row">
-            <div class="col-md">
-              <p>ゲームで日本語の勉強！絵文字でタイピングしよう！
-              </p>
-              <h6>キーバインド</h6>
-              <table class="table table-sm table-striped">
-                <tr><td><kbd>無変換</kbd><kbd class="ms-1">Alt Left</kbd></td><td>ローマ字表示</td></tr>
-                <tr><td><kbd>変換</kbd><kbd class="ms-1">Alt Right</kbd></td><td>音声読み上げ</td></tr>
-              </table>
-            </div>
-            <div id="timePanel" class="col-md text-center">
-              <div class="alert alert-info">
-                <div class="d-flex flex-wrap justify-content-center">
-                  <div class="h5 text-nowrap me-4 notranslate">
-                    <span id="time">60</span>
-                    <span> / 60 sec</span>
-                  </div>
-                  <div>
-                    <button id="mode" class="btn btn-sm btn-secondary notranslate">EASY</button>
-                    <div class="form-check form-check-inline form-switch text-nowrap ms-1">
-                      <input class="form-check-input" type="checkbox" id="guideSwitch" checked>
-                      <label class="form-check-label" for="guideSwitch">ガイド</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-2">
-                  <button id="startButton" class="btn btm-sm btn-primary">
-                    <kbd>Space</kbd>
-                    <span class="ms-1">スタート</span>
-                    <kbd class="ms-3">Esc</kbd>
-                    <span class="ms-1">リセット</span>
-                  </button>
+      <div id="infoPanel" class="row">
+        <div class="col-md">
+          <p>ゲームで日本語の勉強！絵文字でタイピングしよう！
+          </p>
+          <h6>キーバインド</h6>
+          <table class="table table-sm table-striped">
+            <tr><td><kbd>無変換</kbd><kbd class="ms-1">Alt Left</kbd></td><td>ローマ字表示</td></tr>
+            <tr><td><kbd>変換</kbd><kbd class="ms-1">Alt Right</kbd></td><td>音声読み上げ</td></tr>
+          </table>
+        </div>
+        <div id="timePanel" class="col-md text-center">
+          <div class="alert alert-info">
+            <div class="d-flex flex-wrap justify-content-center">
+              <div class="h5 text-nowrap me-4 notranslate">
+                <span id="time">60</span>
+                <span> / 60 sec</span>
+              </div>
+              <div>
+                <button id="mode" class="btn btn-sm btn-secondary notranslate">EASY</button>
+                <div class="form-check form-check-inline form-switch text-nowrap ms-1">
+                  <input class="form-check-input" type="checkbox" id="guideSwitch" checked>
+                  <label class="form-check-label" for="guideSwitch">ガイド</label>
                 </div>
               </div>
             </div>
+            <div class="mt-2">
+              <button id="startButton" class="btn btm-sm btn-primary">
+                <kbd>Space</kbd>
+                <span class="ms-1">スタート</span>
+                <kbd class="ms-3">Esc</kbd>
+                <span class="ms-1">リセット</span>
+              </button>
+            </div>
           </div>
         </div>
+      </div>
+      <div id="gamePanel" class="d-flex flex-column">
         <div id="aaOuter" class="flex-grow-1">
           <pre id="aa">　　　　　　　　🌤️
 
@@ -175,15 +173,15 @@ sudo apt install festival speech-dispatcher-festival</code></pre>
           </div>
           <div id="keyboard" class="d-none simple-keyboard notranslate"></div>
         </div>
-        <div id="scorePanel" class="text-center pb-3 d-none">
-          <h3 class="pt-3">スコア</h3>
-          <span id="score-emoji" class="emoji pt-3">🍙</span>
-          <table class="table table-striped">
-            <tr><td>総タイプ数</td><td><span id="totalType"></span> <span>回</span></td></tr>
-            <tr><td>スピード</td><td><span id="typeSpeed"></span> <span>回/秒</span></td></tr>
-            <tr><td>ミスタイプ数</td><td><span id="errorType"></span> <span>回</span></td></tr>
-          </table>
-        </div>
+      </div>
+      <div id="scorePanel" class="text-center pb-3 d-none">
+        <h3 class="pt-3">スコア</h3>
+        <span id="score-emoji" class="emoji pt-3">🍙</span>
+        <table class="table table-striped">
+          <tr><td>総タイプ数</td><td><span id="totalType"></span> <span>回</span></td></tr>
+          <tr><td>スピード</td><td><span id="typeSpeed"></span> <span>回/秒</span></td></tr>
+          <tr><td>ミスタイプ数</td><td><span id="errorType"></span> <span>回</span></td></tr>
+        </table>
       </div>
       <div id="countPanel" class="text-center d-none">
         <div id="countdown">

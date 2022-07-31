@@ -59,7 +59,7 @@
       @media (max-width: 768px) {
         .emoji { font-size:3rem; }
       }
-      #gamePanel {  height:calc(100vh - 60px); }
+      #gamePanel {  height:calc(100vh - 320px); }
       #typePanel { font-variant-ligatures:none; word-wrap: break-word; }
       #keyboard { touch-action:manipulation; }
       .hg-theme-default .hg-button { height:40px; font-size:2rem; }
@@ -117,45 +117,43 @@
         <pre><code>sudo apt install speech-dispatcher
 sudo apt install festival speech-dispatcher-festival</code></pre>
       </div>
-      <div id="gamePanel" class="d-flex flex-column">
-        <div id="infoPanel">
-          <div class="row">
-            <div class="col-md">
-              <p>Game English for kids. Type alphabets corresponds to the emoji!
-              </p>
-              <h6>Keybinds</h6>
-              <table class="table table-sm table-striped">
-                <tr><td><kbd>無変換</kbd><kbd class="ms-1">Alt Left</kbd></td><td>Show spell</td></tr>
-                <tr><td><kbd>変換</kbd><kbd class="ms-1">Alt Right</kbd></td><td>Read aloud</td></tr>
-              </table>
-            </div>
-            <div id="timePanel" class="col-md text-center">
-              <div class="alert alert-info">
-                <div class="d-flex flex-wrap justify-content-center">
-                  <div class="h5 text-nowrap me-4 notranslate">
-                    <span id="time">60</span>
-                    <span> / 60 sec</span>
-                  </div>
-                  <div>
-                    <button id="mode" class="btn btn-sm btn-secondary notranslate">EASY</button>
-                    <div class="form-check form-check-inline form-switch text-nowrap ms-1">
-                      <input class="form-check-input" type="checkbox" id="guideSwitch" checked>
-                      <label class="form-check-label" for="guideSwitch">guide</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-2">
-                  <button id="startButton" class="btn btm-sm btn-primary">
-                    <kbd>Space</kbd>
-                    <span class="ms-1">START</span>
-                    <kbd class="ms-3">Esc</kbd>
-                    <span class="ms-1">RESET</span>
-                  </button>
+      <div id="infoPanel" class="row">
+        <div class="col-md">
+          <p>Game English for kids. Type alphabets corresponds to the emoji!
+          </p>
+          <h6>Keybinds</h6>
+          <table class="table table-sm table-striped">
+            <tr><td><kbd>無変換</kbd><kbd class="ms-1">Alt Left</kbd></td><td>Show spell</td></tr>
+            <tr><td><kbd>変換</kbd><kbd class="ms-1">Alt Right</kbd></td><td>Read aloud</td></tr>
+          </table>
+        </div>
+        <div id="timePanel" class="col-md text-center">
+          <div class="alert alert-info">
+            <div class="d-flex flex-wrap justify-content-center">
+              <div class="h5 text-nowrap me-4 notranslate">
+                <span id="time">60</span>
+                <span> / 60 sec</span>
+              </div>
+              <div>
+                <button id="mode" class="btn btn-sm btn-secondary notranslate">EASY</button>
+                <div class="form-check form-check-inline form-switch text-nowrap ms-1">
+                  <input class="form-check-input" type="checkbox" id="guideSwitch" checked>
+                  <label class="form-check-label" for="guideSwitch">guide</label>
                 </div>
               </div>
             </div>
+            <div class="mt-2">
+              <button id="startButton" class="btn btm-sm btn-primary">
+                <kbd>Space</kbd>
+                <span class="ms-1">START</span>
+                <kbd class="ms-3">Esc</kbd>
+                <span class="ms-1">RESET</span>
+              </button>
+            </div>
           </div>
         </div>
+      </div>
+      <div id="gamePanel" class="d-flex flex-column">
         <div id="aaOuter" class="flex-grow-1">
           <pre id="aa" class="aa">　　　　　　　　🌤️
 
@@ -174,15 +172,15 @@ sudo apt install festival speech-dispatcher-festival</code></pre>
           </div>
           <div id="keyboard" class="d-none simple-keyboard notranslate"></div>
         </div>
-        <div id="scorePanel" class="text-center pb-3 d-none">
-          <h3 class="pt-3">Score</h3>
-          <span id="score-emoji" class="emoji pt-3">🍙</span>
-          <table class="table table-striped">
-            <tr><td>Total types</td><td><span id="totalType"></span> <span>counts</span></td></tr>
-            <tr><td>Speed</td><td><span id="typeSpeed"></span> <span>counts/sec</span></td></tr>
-            <tr><td>Mistypes</td><td><span id="errorType"></span> <span>counts</span></td></tr>
-          </table>
-        </div>
+      </div>
+      <div id="scorePanel" class="text-center pb-3 d-none">
+        <h3 class="pt-3">Score</h3>
+        <span id="score-emoji" class="emoji pt-3">🍙</span>
+        <table class="table table-striped">
+          <tr><td>Total types</td><td><span id="totalType"></span> <span>counts</span></td></tr>
+          <tr><td>Speed</td><td><span id="typeSpeed"></span> <span>counts/sec</span></td></tr>
+          <tr><td>Mistypes</td><td><span id="errorType"></span> <span>counts</span></td></tr>
+        </table>
       </div>
       <div id="countPanel" class="text-center d-none">
         <div id="countdown">
