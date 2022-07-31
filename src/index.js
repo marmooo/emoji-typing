@@ -19,6 +19,7 @@ const problems = {};
 const originalLang = document.documentElement.lang;
 const ttsLang = getTTSLang();
 let playing;
+let countdowning;
 let typeTimer;
 // https://dova-s.jp/bgm/play16563.html
 const bgm = new Audio("/emoji-typing/mp3/bgm.mp3");
@@ -648,7 +649,8 @@ function typable() {
 }
 
 function countdown() {
-  playing = true;
+  if (countdowning) return;
+  countdowning = true;
   changeUIEmoji();
   typeIndex =
     normalCount =
@@ -669,6 +671,8 @@ function countdown() {
       counter.style.backgroundColor = colors[t];
       counter.textContent = t;
     } else {
+      countdowning = false;
+      playing = true;
       clearInterval(timer);
       document.getElementById("guideSwitch").disabled = false;
       document.getElementById("virtualKeyboard").disabled = false;
