@@ -697,11 +697,6 @@ function replay() {
   removeGuide(romaNode.childNodes[typeIndex]);
   document.getElementById("time").textContent = gameTime;
   countdown();
-  typeIndex =
-    normalCount =
-    errorCount =
-    solveCount =
-      0;
   countPanel.classList.remove("d-none");
   scorePanel.classList.add("d-none");
 }
