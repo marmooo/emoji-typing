@@ -1,4 +1,4 @@
-var CACHE_NAME = "2022-08-04 00:00";
+var CACHE_NAME = "2022-08-10 10:40";
 var urlsToCache = [
   "/emoji-typing/",
   "/emoji-typing/en/",
