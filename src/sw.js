@@ -1,4 +1,4 @@
-var CACHE_NAME = "2022-08-10 10:40";
+var CACHE_NAME = "2022-09-11 08:49";
 var urlsToCache = [
   "/emoji-typing/",
   "/emoji-typing/en/",
@@ -11,7 +11,7 @@ var urlsToCache = [
   "/emoji-typing/mp3/keyboard.mp3",
   "/emoji-typing/favicon/favicon.svg",
   "https://marmooo.github.io/fonts/textar-light.woff2",
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css",
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css",
   "https://cdn.jsdelivr.net/npm/simple-keyboard@3.4.52/build/index.min.js",
 ];
 
