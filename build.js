@@ -2,7 +2,7 @@ import { readLines } from "https://deno.land/std/io/mod.ts";
 import { hiraToRoma } from "https://raw.githubusercontent.com/marmooo/hiraroma/main/mod.js";
 
 function kanaToHira(str) {
-  return str.replace(/[\u30a1-\u30f6]/g, function (match) {
+  return str.replace(/[ァ-ヶ]/g, function (match) {
     const chr = match.charCodeAt(0) - 0x60;
     return String.fromCharCode(chr);
   });
