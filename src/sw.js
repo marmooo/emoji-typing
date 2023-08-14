@@ -1,5 +1,5 @@
-var CACHE_NAME = "2023-07-29 10:17";
-var urlsToCache = [
+const CACHE_NAME = "2023-08-15 08:00";
+const urlsToCache = [
   "/emoji-typing/",
   "/emoji-typing/en/",
   "/emoji-typing/index.js",
@@ -14,38 +14,28 @@ var urlsToCache = [
   "https://cdn.jsdelivr.net/npm/simple-keyboard@3.4.52/build/index.min.js",
 ];
 
-self.addEventListener("install", function (event) {
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches
-      .open(CACHE_NAME)
-      .then(function (cache) {
-        return cache.addAll(urlsToCache);
-      }),
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(urlsToCache);
+    }),
   );
 });
 
-self.addEventListener("fetch", function (event) {
+self.addEventListener("fetch", (event) => {
   event.respondWith(
-    caches.match(event.request)
-      .then(function (response) {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      }),
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
+    }),
   );
 });
 
-self.addEventListener("activate", function (event) {
-  var cacheWhitelist = [CACHE_NAME];
+self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then(function (cacheNames) {
+    caches.keys().then((cacheNames) => {
       return Promise.all(
-        cacheNames.map(function (cacheName) {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        }),
+        cacheNames.filter((cacheName) => cacheName !== CACHE_NAME)
+          .map((cacheName) => caches.delete(cacheName)),
       );
     }),
   );
