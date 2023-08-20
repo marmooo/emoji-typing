@@ -15,7 +15,7 @@ const categories = [...document.getElementById("courseOption").options].map(
   (x) => x.value.toLowerCase(),
 );
 const problems = {};
-const originalLang = document.documentElement.lang;
+const htmlLang = document.documentElement.lang;
 const ttsLang = getTTSLang();
 let playing;
 let countdowning;
@@ -136,7 +136,7 @@ function loadConfig() {
     document.getElementById("bgmOn").classList.add("d-none");
     document.getElementById("bgmOff").classList.remove("d-none");
   }
-  if (originalLang == "ja") {
+  if (htmlLang == "ja") {
     if (localStorage.getItem("furigana") == 1) {
       const obj = document.getElementById("addFurigana");
       addFurigana(obj);
@@ -196,7 +196,7 @@ function toggleGuide(event) {
 }
 
 function addFurigana() {
-  if (originalLang != "ja") return;
+  if (htmlLang != "ja") return;
   const obj = document.getElementById("addFurigana");
   if (obj.getAttribute("data-done")) {
     localStorage.setItem("furigana", 0);
@@ -217,7 +217,7 @@ function changeLang() {
 }
 
 function getTTSLang() {
-  switch (originalLang) {
+  switch (htmlLang) {
     case "en":
       return "en-US";
     case "ja":
@@ -780,7 +780,7 @@ function changeUIEmoji() {
 }
 
 function initProblems() {
-  fetch(`/emoji-typing/data/${originalLang}.csv`)
+  fetch(`/emoji-typing/data/${htmlLang}.csv`)
     .then((response) => response.text())
     .then((tsv) => {
       let prevEn;
@@ -794,7 +794,7 @@ function initProblems() {
           const last = p[p.length - 1];
           last[0].push(emoji);
         } else {
-          if (originalLang == "en") {
+          if (htmlLang == "en") {
             problems[category].push([[emoji], en, en, en]);
           } else {
             problems[category].push([[emoji], en, ja, jaStrict]);
@@ -811,13 +811,13 @@ function setTranslation() {
     attributes: true,
   };
   new MutationObserver(() => {
-    if (originalLang == "en") {
+    if (htmlLang == "en") {
       originalTextNode.classList.add("d-none");
     } else {
       originalTextNode.classList.remove("d-none");
     }
     const lang = document.documentElement.lang;
-    if (lang == originalLang) {
+    if (lang == htmlLang) {
       translatedTextNode.classList.add("d-none");
     } else {
       translatedTextNode.classList.remove("d-none");
