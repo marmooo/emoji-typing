@@ -67,12 +67,12 @@
       #keyboard { touch-action:manipulation; }
       .hg-theme-default .hg-button { height:40px; font-size:2rem; }
       .hg-theme-default .hg-button.hg-standardBtn[data-skbtn="🌏"] { max-width:80px; }
-      .typed { color:var(--bs-gray-500); }
+      .inputed { color:var(--bs-gray-500); }
       .guide { background:var(--bs-blue) !important; color:#fff !important; }
       html[data-bs-theme="dark"] .favicon { filter: invert(1) hue-rotate(180deg); }
       html[data-bs-theme="dark"] #keyboard { background:var(--bs-gray-900); }
       html[data-bs-theme="dark"] .hg-button { background:#000; }
-      html[data-bs-theme="dark"] .typed { color:var(--bs-gray-800); }
+      html[data-bs-theme="dark"] .inputed { color:var(--bs-gray-800); }
     </style>
   </head>
   <body>
@@ -178,7 +178,9 @@ sudo apt install festival speech-dispatcher-festival</code></pre>
               <span id="originalText" class="notranslate">えもじタイピング</span>
               <span id="translatedText" class="d-none">えもじタイピング</span>
             </div>
-            <div id="roma" class="notranslate">Emoji Typing</div>
+            <div id="roma" class="notranslate">
+              <span class="inputed"></span><span class="wanted">E</span><span class="remained">moji Typing</span>
+            </div>
           </div>
           <div id="keyboard" class="d-none simple-keyboard notranslate"></div>
         </div>
@@ -223,6 +225,6 @@ sudo apt install festival speech-dispatcher-festival</code></pre>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@3.4.52/build/index.min.js"></script>
-    <script src="/emoji-typing/index.js"></script>
+    <script type="module" src="/emoji-typing/index.js"></script>
   </body>
 </html>
