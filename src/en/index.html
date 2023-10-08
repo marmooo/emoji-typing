@@ -57,8 +57,7 @@
       #counter {
         font-size:10rem; width:12rem; height:12rem; line-height:12rem; border-radius: 50%;
         background:tomato; color:black; margin:auto; }
-      #emoji { font-size:8rem; }
-      .emoji { font-size:5rem; cursor:pointer; }
+      .emoji { font-size:5rem; }
       @media (max-width: 768px) {
         .emoji { font-size:3rem; }
       }
@@ -186,7 +185,7 @@ sudo apt install festival speech-dispatcher-festival</code></pre>
       </div>
       <div id="scorePanel" class="text-center pb-3 d-none">
         <h3 class="pt-3">Score</h3>
-        <span id="score-emoji" class="emoji pt-3">🍙</span>
+        <span id="score-emoji" class="emoji">🍙</span>
         <table class="table table-striped">
           <tbody>
             <tr><td>Total types</td><td><span id="totalType"></span> <span>counts</span></td></tr>
@@ -196,10 +195,8 @@ sudo apt install festival speech-dispatcher-festival</code></pre>
         </table>
       </div>
       <div id="countPanel" class="text-center d-none">
-        <div id="countdown">
-          <div id="counter"></div>
-          <span id="counter-emoji" class="emoji pt-3">🍢</span>
-        </div>
+        <div id="counter"></div>
+        <span id="counter-emoji" class="emoji">🍢</span>
       </div>
     </main>
     <footer class="pt-4 alert text-center">
