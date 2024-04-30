@@ -1,4 +1,4 @@
-const CACHE_NAME = "2024-03-16 10:30";
+const CACHE_NAME = "2024-05-01 01:20";
 const urlsToCache = [
   "/emoji-typing/",
   "/emoji-typing/en/",
@@ -11,7 +11,6 @@ const urlsToCache = [
   "/emoji-typing/mp3/keyboard.mp3",
   "/emoji-typing/favicon/favicon.svg",
   "https://marmooo.github.io/fonts/textar-light.woff2",
-  "https://cdn.jsdelivr.net/npm/simple-keyboard@3.4.52/build/index.min.js",
 ];
 
 self.addEventListener("install", (event) => {
