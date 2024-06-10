@@ -369,10 +369,7 @@ function typeEvent(event) {
 function typeEventKey(key) {
   switch (key) {
     case "NonConvert": {
-      const visibility = "visible";
-      const children = romaNode.children;
-      children[1].style.visibility = visibility;
-      children[2].style.visibility = visibility;
+      changeVisibility("visible");
       downTime(5);
       return;
     }
@@ -490,6 +487,12 @@ function kanaToHira(str) {
   });
 }
 
+function changeVisibility(visibility) {
+  const children = romaNode.children;
+  children[1].style.visibility = visibility;
+  children[2].style.visibility = visibility;
+}
+
 function typable() {
   const prevProblem = problem;
   const course = document.getElementById("courseOption");
@@ -509,8 +512,7 @@ function typable() {
 
   if (mode.textContent == "EASY") loopVoice(problem.yomi, 1);
   const visibility = (mode.textContent == "EASY") ? "visible" : "hidden";
-  children[1].style.visibility = visibility;
-  children[2].style.visibility = visibility;
+  changeVisibility(visibility);
 
   resizeFontSize(aa);
   if (guide) {
@@ -618,11 +620,15 @@ function scoring() {
 }
 
 function changeMode(event) {
+  normalCount = errorCount = solveCount = 0;
+  document.getElementById("time").textContent = gameTime;
   if (event.target.textContent == "EASY") {
     event.target.textContent = "HARD";
   } else {
     event.target.textContent = "EASY";
   }
+  const visibility = (mode.textContent == "EASY") ? "visible" : "hidden";
+  changeVisibility(visibility);
 }
 
 function selectRandomEmoji() {
