@@ -1,4 +1,4 @@
-import { readLines } from "https://deno.land/std/io/mod.ts";
+import { TextLineStream } from "jsr:@std/streams/text-line-stream";
 import { hiraToRoma } from "https://raw.githubusercontent.com/marmooo/hiraroma/main/mod.js";
 
 function kanaToHira(str) {
@@ -10,8 +10,11 @@ function kanaToHira(str) {
 
 async function build() {
   const result = [];
-  const fileReader = await Deno.open("emoji-ja.lst");
-  for await (const line of readLines(fileReader)) {
+  const file = await Deno.open("emoji-ja.lst");
+  const lineStream = file.readable
+    .pipeThrough(new TextDecoderStream())
+    .pipeThrough(new TextLineStream());
+  for await (const line of lineStream) {
     const [emoji, category, ja, jaStrict] = line.split(",");
     const roma = hiraToRoma(kanaToHira(ja));
     const row = [emoji, category, roma, ja, jaStrict];
