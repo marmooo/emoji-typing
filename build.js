@@ -1,5 +1,5 @@
 import { TextLineStream } from "jsr:@std/streams/text-line-stream";
-import { hiraToRoma } from "https://raw.githubusercontent.com/marmooo/hiraroma/main/mod.js";
+import { hiraToRoma } from "npm:hiraroma@0.0.1";
 
 function kanaToHira(str) {
   return str.replace(/[ァ-ヶ]/g, function (match) {
