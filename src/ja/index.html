@@ -38,8 +38,8 @@
     <link class="inline-css" href="https://cdn.jsdelivr.net/npm/simple-keyboard@3.7.77/build/css/index.min.css" rel="stylesheet" crossorigin="anonymous">
     <style>
       #aaOuter {
+        height:calc(100vh - 320px); overflow:hidden;
         background:transparent; display:flex; align-items:center; justify-content:center;
-        overflow:hidden;
       }
       #aa { position:relative; top:0; left:0; margin:auto; }
       #counter {
@@ -49,7 +49,6 @@
       @media (max-width: 768px) {
         .emoji { font-size:3rem; }
       }
-      #gamePanel {  height:calc(100vh - 320px); }
       #typePanel { font-variant-ligatures:none; word-wrap: break-word; }
       #keyboard { touch-action:manipulation; }
       .hg-theme-default .hg-button { height:40px; font-size:2rem; }
@@ -150,20 +149,20 @@ sudo apt install festival speech-dispatcher-festival</code></pre>
           </div>
         </div>
       </div>
-      <div id="gamePanel" class="d-flex flex-column">
-        <div id="aaOuter" class="flex-grow-1">
-          <pre id="aa">　　　　　　　　🌤️
+      <div id="gamePanel">
+        <div id="aaOuter">
+          <pre id="aa" class="aa">　　　　　　　　🌤️
 
-🐒🦨🐢 
-　　　🐈🐈‍⬛🐕
-　　　　　　　　🐌🐦🦆
-🌱🪴🥀🌻</pre>
+  🐒🦨🐢 
+  　　　🐈🐈‍⬛🐕
+  　　　　　　　　🐌🐦🦆
+  🌱🪴🥀🌻</pre>
         </div>
         <div id="playPanel">
           <div id="typePanel" class="alert alert-info h1 text-center">
             <div>
-              <span id="originalText" class="notranslate">えもじタイピング</span>
-              <span id="translatedText" class="d-none">えもじタイピング</span>
+              <span id="originalText" class="d-none notranslate">Emoji Typing</span>
+              <span id="translatedText" class="d-none">Emoji Typing</span>
             </div>
             <div id="roma" class="notranslate">
               <span class="inputed"></span><span class="wanted">E</span><span class="remained">moji Typing</span>
