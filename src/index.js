@@ -560,7 +560,8 @@ function typable() {
   resizeFontSize(aa);
   if (guide) {
     removePrevGuide(prevProblem);
-    showGuide(problem.roma[0]);
+    const nextKey = problem.romaji.currentNode.children.keys().next().value;
+    showGuide(nextKey);
   }
 }
 
@@ -674,12 +675,12 @@ function selectRandomEmoji() {
   const problem = p[getRandomInt(0, p.length)];
   const emojis = problem.emojis;
   const emoji = emojis[getRandomInt(0, emojis.length)];
-  return [emoji, problem.roma];
+  return emoji;
 }
 
 function changeUIEmoji() {
-  document.getElementById("counter-emoji").textContent = selectRandomEmoji()[0];
-  document.getElementById("score-emoji").textContent = selectRandomEmoji()[0];
+  document.getElementById("counter-emoji").textContent = selectRandomEmoji();
+  document.getElementById("score-emoji").textContent = selectRandomEmoji();
 }
 
 function initProblems() {
