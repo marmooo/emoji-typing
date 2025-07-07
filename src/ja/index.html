@@ -149,7 +149,26 @@ sudo apt install festival speech-dispatcher-festival</code></pre>
           </div>
         </div>
       </div>
-      <div id="gamePanel"></div>
+      <div id="gamePanel">
+        <div id="aaOuter">
+          <pre id="aa" class="aa">　　　　　　　　🌤️
+
+🐒🦨🐢 
+　　　🐈🐈‍⬛🐕
+　　　　　　　　🐌🐦🦆
+🌱🪴🥀🌻</pre>
+        </div>
+        <div id="typePanel" class="alert alert-info h1 text-center">
+          <div>
+            <span id="originalText" class="notranslate">えもじタイピング</span>
+            <span id="translatedText" class="d-none">えもじタイピング</span>
+          </div>
+          <div id="roma" class="notranslate">
+            <span class="inputed"></span><span class="wanted">E</span><span class="remained">moji Typing</span>
+          </div>
+        </div>
+        <div id="keyboard" class="d-none simple-keyboard notranslate"></div>
+      </div>
       <div id="scorePanel" class="text-center pb-3 d-none">
         <h3 class="pt-3">スコア</h3>
         <span id="score-emoji" class="emoji">🍙</span>
@@ -295,26 +314,6 @@ sudo apt install festival speech-dispatcher-festival</code></pre>
       <div class="text-muted">&copy; <a href="https://github.com/marmooo">marmooo</a>
       </div>
     </footer>
-    <template id="gamePanelTemplate">
-      <div id="aaOuter">
-        <pre id="aa" class="aa">　　　　　　　　🌤️
-
-🐒🦨🐢 
-　　　🐈🐈‍⬛🐕
-　　　　　　　　🐌🐦🦆
-🌱🪴🥀🌻</pre>
-      </div>
-      <div id="typePanel" class="alert alert-info h1 text-center">
-        <div>
-          <span id="originalText" class="notranslate">えもじタイピング</span>
-          <span id="translatedText" class="d-none">えもじタイピング</span>
-        </div>
-        <div id="roma" class="notranslate">
-          <span class="inputed"></span><span class="wanted">E</span><span class="remained">moji Typing</span>
-        </div>
-      </div>
-      <div id="keyboard" class="d-none simple-keyboard notranslate"></div>
-    </template>
     <script type="module" src="/emoji-typing/index.js"></script>
   </body>
 </html>
