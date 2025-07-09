@@ -343,14 +343,12 @@ function loadVoices() {
   });
 }
 
-function loopVoice(text, n) {
+function speak(text) {
   speechSynthesis.cancel();
   const msg = new globalThis.SpeechSynthesisUtterance(text);
   msg.voice = englishVoices[Math.floor(Math.random() * englishVoices.length)];
   msg.lang = ttsLang;
-  for (let i = 0; i < n; i++) {
-    speechSynthesis.speak(msg);
-  }
+  speechSynthesis.speak(msg);
 }
 
 function nextProblem() {
@@ -413,7 +411,7 @@ function typeEventKey(key) {
       return;
     }
     case "Convert": {
-      loopVoice(problem.yomi, 1);
+      speak(problem.yomi);
       return;
     }
     case "Escape":
@@ -550,7 +548,7 @@ function typable() {
   children[1].textContent = romaji.remainedRomaji[0];
   children[2].textContent = romaji.remainedRomaji.slice(1);
 
-  if (mode.textContent == "EASY") loopVoice(problem.yomi, 1);
+  if (mode.textContent == "EASY") speak(problem.yomi);
   const visibility = (mode.textContent == "EASY") ? "visible" : "hidden";
   changeVisibility(visibility);
 
