@@ -1,6 +1,6 @@
 # Emoji Typing
 
-Game English/Japanese for kids. Type alphabets corresponds to the emoji!
+Game English/Japanese for kids. Type alphabet corresponds to the emoji!
 
 ## Build
 
