@@ -1,5 +1,6 @@
 import simpleKeyboard from "https://cdn.jsdelivr.net/npm/simple-keyboard@3.7.77/+esm";
 import { Romaji } from "https://cdn.jsdelivr.net/npm/@marmooo/romaji/+esm";
+import { createWorker } from "https://cdn.jsdelivr.net/npm/emoji-particle@0.0.4/+esm";
 
 const remSize = parseInt(getComputedStyle(document.documentElement).fontSize);
 const gamePanel = document.getElementById("gamePanel");
@@ -25,6 +26,7 @@ let typeTimer;
 const bgm = new Audio("/emoji-typing/mp3/bgm.mp3");
 bgm.volume = 0.4;
 bgm.loop = true;
+let consecutiveWins = 0;
 let errorCount = 0;
 let normalCount = 0;
 let solveCount = 0;
@@ -120,6 +122,9 @@ const keyboard = new simpleKeyboard.default({
     }
   },
 });
+const emojiParticle = initEmojiParticle();
+const maxParticleCount = 5;
+let enableParticle = true;
 let audioContext;
 const audioBufferCache = {};
 let englishVoices = [];
@@ -196,6 +201,11 @@ function toggleGuide(event) {
     guide = false;
     if (problem) removePrevGuide(problem);
   }
+}
+
+function toggleParticle() {
+  enableParticle = !enableParticle;
+  document.getElementById("toggleParticle").classList.toggle("off");
 }
 
 function addFurigana() {
@@ -347,7 +357,43 @@ function speak(text) {
   speechSynthesis.speak(msg);
 }
 
+function initEmojiParticle() {
+  const canvas = document.createElement("canvas");
+  Object.assign(canvas.style, {
+    position: "fixed",
+    pointerEvents: "none",
+    top: "0px",
+    left: "0px",
+  });
+  canvas.width = document.documentElement.clientWidth;
+  canvas.height = document.documentElement.clientHeight;
+  document.body.prepend(canvas);
+
+  const offscreen = canvas.transferControlToOffscreen();
+  const worker = createWorker();
+  worker.postMessage({ type: "init", canvas: offscreen }, [offscreen]);
+
+  globalThis.addEventListener("resize", () => {
+    const width = document.documentElement.clientWidth;
+    const height = document.documentElement.clientHeight;
+    worker.postMessage({ type: "resize", width, height });
+  });
+  return { canvas, offscreen, worker };
+}
+
 function nextProblem() {
+  if (enableParticle) {
+    for (let i = 0; i < Math.min(consecutiveWins, maxParticleCount); i++) {
+      emojiParticle.worker.postMessage({
+        type: "spawn",
+        options: {
+          particleType: "popcorn",
+          originX: Math.random() * emojiParticle.canvas.width,
+          originY: Math.random() * emojiParticle.canvas.height,
+        },
+      });
+    }
+  }
   playAudio("correct", 0.3);
   solveCount += 1;
   typable();
@@ -437,6 +483,7 @@ function typeEventKey(key) {
         removeGuide(key);
       }
       if (romaji.isEnd()) {
+        consecutiveWins += 1;
         nextProblem();
       } else if (guide) {
         showGuide(remainedRomaji[0]);
@@ -444,6 +491,7 @@ function typeEventKey(key) {
     } else {
       playAudio("incorrect", 0.3);
       errorCount += 1;
+      consecutiveWins = 0;
     }
   }
 }
@@ -585,6 +633,7 @@ function countdown() {
       playing = true;
       removePrevGuide(problem);
       normalCount = errorCount = solveCount = 0;
+      consecutiveWins = 0;
       clearInterval(timer);
       document.getElementById("guideSwitch").disabled = false;
       document.getElementById("virtualKeyboard").disabled = false;
@@ -742,6 +791,7 @@ setTranslation();
 
 startButton.onclick = startGame;
 document.getElementById("toggleDarkMode").onclick = toggleDarkMode;
+document.getElementById("toggleParticle").onclick = toggleParticle;
 const furiganaButton = document.getElementById("addFurigana");
 if (furiganaButton) furiganaButton.onclick = addFurigana;
 document.getElementById("toggleBGM").onclick = toggleBGM;
