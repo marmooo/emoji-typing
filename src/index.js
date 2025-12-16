@@ -139,13 +139,6 @@ function loadConfig() {
     document.getElementById("bgmOn").classList.add("d-none");
     document.getElementById("bgmOff").classList.remove("d-none");
   }
-  if (htmlLang == "ja") {
-    if (localStorage.getItem("furigana") == 1) {
-      const obj = document.getElementById("addFurigana");
-      addFurigana(obj);
-      obj.setAttribute("data-done", true);
-    }
-  }
 }
 
 function toggleDarkMode() {
@@ -206,21 +199,6 @@ function toggleGuide(event) {
 function toggleParticle() {
   enableParticle = !enableParticle;
   document.getElementById("toggleParticle").classList.toggle("off");
-}
-
-function addFurigana() {
-  if (htmlLang != "ja") return;
-  const obj = document.getElementById("addFurigana");
-  if (obj.getAttribute("data-done")) {
-    localStorage.setItem("furigana", 0);
-    location.reload();
-  } else {
-    import("https://marmooo.github.io/yomico/yomico.min.js").then((module) => {
-      module.yomico("/emoji-typing/ja/index.yomi");
-    });
-    localStorage.setItem("furigana", 1);
-    obj.setAttribute("data-done", true);
-  }
 }
 
 function changeLang() {
@@ -792,8 +770,6 @@ setTranslation();
 startButton.onclick = startGame;
 document.getElementById("toggleDarkMode").onclick = toggleDarkMode;
 document.getElementById("toggleParticle").onclick = toggleParticle;
-const furiganaButton = document.getElementById("addFurigana");
-if (furiganaButton) furiganaButton.onclick = addFurigana;
 document.getElementById("toggleBGM").onclick = toggleBGM;
 document.getElementById("virtualKeyboard").onclick = toggleKeyboard;
 globalThis.addEventListener("resize", () => {
